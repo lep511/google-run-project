@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Chat Assistant</h1>
+            <p>Powered by advanced language models</p>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    <strong>AI Assistant:</strong> Hello! I'm here to help you with any questions or tasks. What would you like to know?
+                </div>
+            </div>
+            
+            <div class="loading" id="loading">AI is thinking...</div>
+            
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    class="message-input" 
+                    id="messageInput" 
+                    placeholder="Type your message here..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="send-btn" onclick="sendMessage()" id="sendBtn">
+                    Send
+                </button>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>💡 Smart Responses</h3>
+                <p>Get intelligent answers powered by state-of-the-art AI</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Fast Processing</h3>
+                <p>Quick response times for seamless conversation</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Secure</h3>
+                <p>Your conversations are processed securely</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
