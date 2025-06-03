@@ -1,57 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat Assistant</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+	<title>AI Chat Assistant | Clean, Minimal AI Interface</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="AI Chat Assistant - Powered by advanced language models with clean, minimal interface"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🤖 AI Chat Assistant</h1>
-            <p>Powered by advanced language models</p>
-        </div>
-        
-        <div class="chat-container">
-            <div class="chat-messages" id="chatMessages">
-                <div class="message ai-message">
-                    <strong>AI Assistant:</strong> Hello! I'm here to help you with any questions or tasks. What would you like to know?
-                </div>
-            </div>
-            
-            <div class="loading" id="loading">AI is thinking...</div>
-            
-            <div class="input-group">
-                <input 
-                    type="text" 
-                    class="message-input" 
-                    id="messageInput" 
-                    placeholder="Type your message here..."
-                    onkeypress="handleKeyPress(event)"
-                >
-                <button class="send-btn" onclick="sendMessage()" id="sendBtn">
-                    Send
-                </button>
-            </div>
-        </div>
-        
-        <div class="features">
-            <div class="feature">
-                <h3>💡 Smart Responses</h3>
-                <p>Get intelligent answers powered by state-of-the-art AI</p>
-            </div>
-            <div class="feature">
-                <h3>⚡ Fast Processing</h3>
-                <p>Quick response times for seamless conversation</p>
-            </div>
-            <div class="feature">
-                <h3>🔒 Secure</h3>
-                <p>Your conversations are processed securely</p>
-            </div>
-        </div>
-    </div>
 
-    <script src="/static/js/app.js"></script>
+	<header>
+		<div class="wrapper">
+			<a href="#" class="logo"> <img src="img/logo.png" alt="" title="AI Chat Assistant"/> </a>
+			<nav>
+				<ul>
+					<li><a href="">Services</a></li>
+					<li><a href="">Our Story</a></li>
+					<li><a href="">Work</a></li>
+					<li><a href="">Journal</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header><!-- End Header -->
+
+	<section class="billboard">
+		<section class="caption">
+			<p class="cap_title">🤖 AI Chat Assistant</p>
+			<p class="cap_desc">Powered by advanced language models</p>
+			<a href="#chat-section">Start Chatting <i></i></a>
+		</section>
+	</section><!-- End billboard -->
+
+	<div class="container">
+		<div class="header">
+			<h1>🤖 AI Chat Assistant</h1>
+			<p>Powered by advanced language models</p>
+		</div>
+		
+		<div class="chat-container" id="chat-section">
+			<div class="chat-messages" id="chatMessages">
+				<div class="message ai-message">
+					<strong>AI Assistant:</strong> Hello! I'm here to help you with any questions or tasks. What would you like to know?
+				</div>
+			</div>
+			
+			<div class="loading" id="loading">AI is thinking...</div>
+			
+			<div class="input-group">
+				<input 
+					type="text" 
+					class="message-input" 
+					id="messageInput" 
+					placeholder="Type your message here..."
+					onkeypress="handleKeyPress(event)"
+				>
+				<button class="send-btn" onclick="sendMessage()" id="sendBtn">
+					Send
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<section class="services wrapper">
+		<ul>
+			<li>
+				<img class="s_icons" src="img/s1_icon.png" title="" alt=""/>
+				<h3>💡 Smart Responses</h3>
+				<p>Get intelligent answers powered by state-of-the-art AI technology for all your questions and tasks.</p>		
+			</li>
+			<li>
+				<img class="s_icons" src="img/s2_icon.png" title="" alt=""/>
+				<h3>⚡ Fast Processing</h3>
+				<p>Quick response times for seamless conversation experience with advanced natural language processing.</p>		
+			</li>
+			<li>
+				<img class="s_icons" src="img/s3_icon.png" title="" alt=""/>
+				<h3>🔒 Secure</h3>
+				<p>Your conversations are processed securely with enterprise-grade security and privacy protection.</p>		
+			</li>
+		</ul>
+	</section><!-- End services -->
+
+	<section class="video wrapper">
+		<h3>Experience the power of AI conversation</h3>
+		<p>Our AI assistant provides intelligent responses and helps you accomplish tasks efficiently through natural conversation.</p>
+		<div class="ex_video">
+			<a href="#"><img src="img/video.jpg" alt="" title=""/></a>
+		</div>
+	</section>	<!-- End video -->
+
+	<section class="recent_work wrapper">
+		<h3 class="S_title">AI Features</h3>
+
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="img/work_image.jpg" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Natural Language Processing
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="img/work_image.jpg" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Intelligent Responses
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="img/work_image.jpg" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Multi-topic Support
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="img/work_image.jpg" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Real-time Chat
+				<i></i>
+			</a>
+		</div>
+	</section><!-- End recent_work -->
+
+	<div class="features">
+		<div class="feature">
+			<h3>💡 Smart Responses</h3>
+			<p>Get intelligent answers powered by state-of-the-art AI</p>
+		</div>
+		<div class="feature">
+			<h3>⚡ Fast Processing</h3>
+			<p>Quick response times for seamless conversation</p>
+		</div>
+		<div class="feature">
+			<h3>🔒 Secure</h3>
+			<p>Your conversations are processed securely</p>
+		</div>
+	</div>
+
+	<section class="subscription">
+		<div class="wrapper">
+			<p class="title">Try our AI assistant today.</p>
+			<p class="desc">Join thousands of users experiencing the power of AI-powered conversations.</p>
+			<a href="#chat-section" class="start_btn">Start Chatting Now</a>
+		</div>
+	</section><!-- End subscription -->
+
+	<section class="social">
+			<a href="http://facebook.com/pixelhint" target="_blank" class="fb"></a>
+			<a href="http://twitter.com/pixelhint" target="_blank" class="t"></a>
+			<a href="http://dribbble.com/pixelhint" target="_blank" class="d"></a>
+			<a href="#" target="_blank" class="g"></a>
+	</section><!-- End social -->
+
+	<footer>
+		<div class="wrapper">
+			<div class="f_cols">
+				<h3>Location</h3>
+				<p>1401 South Grand Avenue Los Angeles, CA 90015 <span class="phone">(213) 748-2411</span></p> 	
+				<a href="#" class="map">see it in the map <span class="arrow">&nbsp;&rarr;</span></a>	
+			</div>	
+
+			<div class="f_cols">
+				<h3>AI Features</h3>
+				<ul>
+					<li><a href="#">Smart Responses</a></li>
+					<li><a href="#">Fast Processing</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">API Access</a></li>
+				</ul>	
+			</div>	
+
+			<div class="f_cols">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Policies</a></li>
+				</ul>	
+			</div>	
+
+			<div class="f_cols">
+				<h3>AI Assistant.</h3>
+				<p>Powered by advanced language models for intelligent conversation.</p>
+				<p>Template made by <a href="http://pixelhint.com" target="_blank">pixelhint.com</a></p>
+			</div>	
+		</div>
+	</footer><!-- End footer -->
+
+	<div id="lightbox"></div>
+	<div id="box">
+		<a href="" class="close"></a>
+		<form method="" action="">
+			<input type="text" id="email" placeholder="Email"/>
+			<input type="text" id="name" placeholder="Name"/>
+			<input type="submit" id="submit" value="Subscribe Now"/>
+		</form>
+	</div>
+
+	<script src="/static/js/app.js"></script>
 </body>
 </html>
